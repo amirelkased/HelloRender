@@ -19,7 +19,8 @@ spring:
       path: /h2-console
 
 server:
-  port: 8080
+  address: 0.0.0.0
+  port: ${PORT:8080}
 
 springdoc:
   api-docs:

@@ -45,6 +45,7 @@
     <mapping directory="$PROJECT_DIR$/../../Python/Financial-Data-Analysis-Model/Python/Financial-Data-Analysis-Model" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../Scripts/BrowserExtensions/freemedium" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../CriteriaSpecifications" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Money_Tracker" vcs="Git" />
   </component>
 </project>
