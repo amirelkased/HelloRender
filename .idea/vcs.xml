@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Frontend/FinancialDataAnalysis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Frontend/USD-NBERate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Frontend/javascript-interview-questions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Frontend/money-tracker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Frontend/utilapps-portal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/FawryE-commerce/Bank-Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/FawryE-commerce/Product-Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/FawryE-commerce/Store-Api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/FoodStuff-Kased-Kareem" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/Interview-Hub" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/MyPortfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Fullstack/event-ticket-platform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Arab-Enterprise-Kit-Lite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Core-Java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/DSA-Patterns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/FintechApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Hitomi-Downloader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/JWT-Auth-Guide" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/OpenWA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/PortFolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Portfollio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Presentify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/ProjectIdeas/Connect" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/ProjectIdeas/E-commerce-System" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/ProjectIdeas/gitframe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/ProjectIdeas/okazx-monolithic-ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/Proofly.v1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/adityasrivastava29.github.io" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/bitchat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/bitchat-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/breakerino-portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/georelays" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/linkedin-feed-filter-extension" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/magic-portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/microservice-E-commerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/sfpoint" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/udemy-downloader-gui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/voicebox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../OpenSource/wa-analytics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Python/Financial-Data-Analysis-Model" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Python/Financial-Data-Analysis-Model/Python/Financial-Data-Analysis-Model" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Scripts/BrowserExtensions/freemedium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../CriteriaSpecifications" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Money_Tracker" vcs="Git" />
+  </component>
+</project>

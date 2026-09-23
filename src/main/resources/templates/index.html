@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello-WSL</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: "Segoe UI", system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1rem; color: #1f2933; background: #f5f7fa; }
+        header h1 { font-size: 2rem; margin: 0 0 .25rem; }
+        header p { color: #52606d; margin-top: 0; }
+        .panel { background: #fff; border: 1px solid #e4e7eb; border-radius: 8px; padding: 1rem 1.25rem; margin-top: 1.5rem; }
+        .panel h2 { margin-top: 0; font-size: 1.1rem; }
+        input { width: 100%; padding: .5rem .6rem; margin-bottom: .75rem; border: 1px solid #cbd2d9; border-radius: 6px; }
+        button { background: #1c7ed6; color: #fff; border: 0; padding: .55rem 1.1rem; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #1971c2; }
+        table { width: 100%; border-collapse: collapse; margin-top: .5rem; }
+        th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #e4e7eb; font-size: .95rem; }
+        th { color: #52606d; font-weight: 600; }
+        code { background: #eef2f5; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+        .notice { margin-top: 1.5rem; padding: .9rem 1.1rem; background: #e7f5ff; border: 1px solid #a5d8ff; border-radius: 8px; font-size: .95rem; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hello-WSL 👋</h1>
+    <p>Ultimate Spring Boot starter app running on WSL with an in-memory H2 database.</p>
+</header>
+
+<div th:if="${saved}" class="notice">
+    Saved greeting #<strong th:text="${saved.id}"></strong> —
+    <em th:text="${saved.message}"></em> by <strong th:text="${saved.createdBy}"></strong>.
+</div>
+
+<div class="panel">
+    <h2>Add a greeting</h2>
+    <form method="post" th:action="@{/}">
+        <input type="text" name="message" placeholder="Message, e.g. Hello from WSL!" required>
+        <input type="text" name="createdBy" placeholder="Your name, e.g. amirelkased" required>
+        <button type="submit">Save greeting</button>
+    </form>
+</div>
+
+<div class="panel">
+    <h2>Greetings (stored in H2, lost on restart)</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Message</th>
+            <th>Created by</th>
+            <th>At</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="g : ${greetings}" th:if="${!greetings.isEmpty()}">
+            <td th:text="${g.id}"></td>
+            <td th:text="${g.message}"></td>
+            <td th:text="${g.createdBy}"></td>
+            <td th:text="${#temporals.format(g.createdAt, 'HH:mm:ss')}"></td>
+        </tr>
+        <tr th:if="${greetings.isEmpty()}">
+            <td colspan="4">No greetings yet.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel">
+    <h2>Try the REST API</h2>
+    <pre>GET  <code>/api/hello?name=WSL</code></pre>
+    <pre>GET  <code>/api/greetings</code></pre>
+    <pre>POST <code>/api/greetings</code>  {"message":"Hi","createdBy":"you"}</pre>
+    <pre>GET  <code>/api/greetings/{id}</code> · DELETE <code>/api/greetings/{id}</code></pre>
+    <p>In-memory database console: <a href="/h2-console" target="_blank">/h2-console</a>
+        (JDBC URL: <code>jdbc:h2:mem:hellowsl</code>, user: <code>sa</code>, empty password).</p>
+    <p>API docs: <a href="/swagger-ui.html" target="_blank">Swagger UI</a> ·
+        <a href="/scalar" target="_blank">Scalar</a> ·
+        <a href="/v3/api-docs" target="_blank">OpenAPI JSON</a></p>
+</div>
+</body>
+</html>
